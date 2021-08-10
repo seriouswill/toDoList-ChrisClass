@@ -8,9 +8,9 @@ let list = document.getElementsByTagName("ul")[0];
 button.addEventListener("click", () => {
     let listItem = document.createElement("li");
     listItem.textContent = input.value;
-    
-    list.appendChild(listItem);
     list.appendChild(checkbox);
+    list.appendChild(listItem);
+    
     
     
     input.value = "";
@@ -18,8 +18,10 @@ button.addEventListener("click", () => {
 
 remove.addEventListener("click", () => {
     let lastItem = document.querySelector("li:last-child");
+    let lastCheckbox = document.querySelector("input:last-child")
     let list = document.getElementsByTagName("ul")[0]
     list.removeChild(lastItem)
+    list.removeChild(lastCheckbox);
     input.value = "";
 })
 
