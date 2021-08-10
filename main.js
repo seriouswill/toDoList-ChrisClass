@@ -31,6 +31,15 @@ list.addEventListener("click", (e) => {
     ul.removeChild(li);
 })
 
-checkbox.addEventListener("click", () => {
-    listItem.style.setProperty("text-decoration", "line-through");
-})
+document.querySelector('#input').addEventListener('keypress', function (e) {
+    if (e.key === 'Enter') {
+        let listItem = document.createElement("li");
+        listItem.textContent = input.value;
+        
+        list.appendChild(listItem);
+    }
+});
+
+// checkbox.addEventListener("click", () => {
+//     listItem.style.setProperty("text-decoration", "line-through");
+// })
