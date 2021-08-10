@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:700,900");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 50px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 900;
+}
+
+h1 {
+  font-size: 48px;
+  text-align: center;
+}
+
+ul,
+p,
+a,
+input,
+button {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+span {
+  font-size: 48px;
+  font-weight: 900;
+}
+
+input {
+  padding: 10px;
+}
+
+img {
+  display: block;
+}
+
+button {
+  background-color: rgb(32, 218, 32);
+  border: black 2px dashed;
+  border-radius: 5px;
+  padding: 10px;
+  margin-left: 40px;
+}
+
+button:hover {
+  color: rgb(229, 255, 0);
+}
+
+/* for the checkbox */
+
+ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 20px;
+  padding: 20px;
+}
+
+main {
+  align-content: center;
+  text-align: center;
+}
